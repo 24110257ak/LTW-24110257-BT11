@@ -175,13 +175,13 @@
                     <p class="small text-muted mb-0">Khoa CNTT - Bộ Môn Công Nghệ Phần Mềm - HCMUTE</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <span class="badge bg-primary px-3 py-2 me-2">Họ và tên: Nguyễn Văn Sinh Viên</span>
+                    <span class="badge bg-primary px-3 py-2 me-2">Họ và tên: Trần Vũ Anh Khoa</span>
                     <span class="badge bg-success px-3 py-2 me-2">MSSV: 24110257</span>
                     <span class="badge bg-danger px-3 py-2">Mã đề: Đề 05</span>
                 </div>
             </div>
             <hr class="border-secondary my-3">
-            <p class="small text-muted mb-0">© 2026 - Bản quyền thuộc về Sinh viên MSSV 24110257 - Bài thi Quá trình Đề 05</p>
+            <p class="small text-muted mb-0">© 2026 - Bản quyền thuộc về Trần Vũ Anh Khoa (MSSV: 24110257)</p>
         </div>
     </footer>
 

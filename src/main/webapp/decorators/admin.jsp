@@ -98,7 +98,7 @@
                     <span class="text-white fw-bold">HỆ THỐNG QUẢN TRỊ BÀI THI QUÁ TRÌNH</span> - Đề 05
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <span class="badge bg-primary px-3 py-2 me-2">Họ tên: Nguyễn Văn Sinh Viên</span>
+                    <span class="badge bg-primary px-3 py-2 me-2">Họ tên: Trần Vũ Anh Khoa</span>
                     <span class="badge bg-warning text-dark px-3 py-2 me-2">MSSV: 24110257</span>
                     <span class="badge bg-danger px-3 py-2">Mã đề: Đề 05</span>
                 </div>

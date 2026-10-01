@@ -1,5 +1,5 @@
 # BÀI THI QUÁ TRÌNH LẬP TRÌNH WEB - ĐỀ SỐ 05
-**Sinh viên thực hiện:** 24110257  
+**Sinh viên thực hiện:** Trần Vũ Anh Khoa - MSSV: 24110257  
 **Repository nộp bài:** [https://github.com/24110257ak/LTW-24110257-BT11.git](https://github.com/24110257ak/LTW-24110257-BT11.git)  
 
 ---
