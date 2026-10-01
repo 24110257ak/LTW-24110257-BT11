@@ -20,12 +20,26 @@
                 <a class="btn btn-primary btn-lg px-4" href="<c:url value='/products-by-seller'/>">
                     <i class="fa-solid fa-store me-2"></i>Xem Sản Phẩm Gom Theo Seller (Câu 3)
                 </a>
-                <a class="btn btn-outline-secondary btn-lg px-4" href="<c:url value='/login'/>">
-                    <i class="fa-solid fa-right-to-bracket me-2"></i>Đăng Nhập / Đăng Ký OTP (Câu 2)
-                </a>
-                <a class="btn btn-outline-danger btn-lg px-4" href="<c:url value='/admin/categories'/>">
-                    <i class="fa-solid fa-gear me-2"></i>Quản Trị CRUD Category & Product (Câu 5)
-                </a>
+                <c:choose>
+                    <c:when test="${sessionScope.account == null}">
+                        <a class="btn btn-outline-secondary btn-lg px-4" href="<c:url value='/login'/>">
+                            <i class="fa-solid fa-right-to-bracket me-2"></i>Đăng Nhập / Đăng Ký OTP (Câu 2)
+                        </a>
+                    </c:when>
+                    <c:otherwise>
+                        <a class="btn btn-outline-success btn-lg px-4" href="<c:url value='/cart'/>">
+                            <i class="fa-solid fa-cart-shopping me-2"></i>Xem Giỏ Hàng
+                        </a>
+                        <a class="btn btn-outline-primary btn-lg px-4" href="<c:url value='/orders'/>">
+                            <i class="fa-solid fa-clock-rotate-left me-2"></i>Lịch Sử Đặt Hàng
+                        </a>
+                    </c:otherwise>
+                </c:choose>
+                <c:if test="${sessionScope.account != null && sessionScope.account.roleId == 2}">
+                    <a class="btn btn-outline-danger btn-lg px-4" href="<c:url value='/admin/categories'/>">
+                        <i class="fa-solid fa-gear me-2"></i>Quản Trị CRUD Category & Product (Câu 5)
+                    </a>
+                </c:if>
             </div>
         </div>
     </div>
