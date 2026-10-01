@@ -4,6 +4,33 @@
 
 ---
 
+## 🌐 Đường Dẫn Mở Web & Kiểm Thử Hệ Thống (Local URLs)
+
+> 💡 **Lưu ý cấu hình máy chủ:**  
+> Dự án được đóng gói dưới dạng `KT_24110257.war` và triển khai trên **Apache Tomcat 10.1+ / 11** (Port mặc định: `8080`).
+
+### 🔗 Danh sách các đường dẫn trực tiếp:
+| Chức năng | Đường dẫn (URL) | Ghi chú |
+| :--- | :--- | :--- |
+| 🏠 **Trang Chủ** | [http://localhost:8080/KT_24110257/home](http://localhost:8080/KT_24110257/home) | Danh mục & sản phẩm nổi bật |
+| 🛒 **Giỏ Hàng** | [http://localhost:8080/KT_24110257/cart](http://localhost:8080/KT_24110257/cart) | Thêm, xóa, sửa, kiểm soát tồn kho |
+| 💳 **Thanh Toán COD** | [http://localhost:8080/KT_24110257/checkout](http://localhost:8080/KT_24110257/checkout) | Đặt hàng COD, trừ tồn kho DB |
+| 📜 **Lịch Sử Đặt Hàng** | [http://localhost:8080/KT_24110257/orders](http://localhost:8080/KT_24110257/orders) | Lọc 8 trạng thái, hủy đơn hoàn kho |
+| 🏪 **Sản Phẩm Theo Seller (Câu 3)** | [http://localhost:8080/KT_24110257/products-by-seller](http://localhost:8080/KT_24110257/products-by-seller) | Gom nhóm theo mã SellerID |
+| 🔍 **Chi Tiết Sản Phẩm (Câu 4)** | [http://localhost:8080/KT_24110257/product/detail?id=1](http://localhost:8080/KT_24110257/product/detail?id=1) | Chọn số lượng, mua ngay / thêm giỏ |
+| 🔑 **Đăng Nhập** | [http://localhost:8080/KT_24110257/login](http://localhost:8080/KT_24110257/login) | Form đăng nhập tài khoản |
+| 📝 **Đăng Ký OTP (Câu 2)** | [http://localhost:8080/KT_24110257/register](http://localhost:8080/KT_24110257/register) | Đăng ký & xác thực mã OTP qua Mail |
+| ⚙️ **Quản Trị Admin (Câu 5)** | [http://localhost:8080/KT_24110257/admin/categories](http://localhost:8080/KT_24110257/admin/categories) | Quản lý CRUD Category & Product |
+
+### 👥 Danh sách tài khoản mẫu để đăng nhập kiểm thử (có sẵn trong `database.sql`):
+| Vai trò | Tên đăng nhập (Username) | Mật khẩu (Password) | Quyền hạn |
+| :--- | :--- | :--- | :--- |
+| **User (Khách hàng)** | `user1` | `123` | Mua hàng, Giỏ hàng, Thanh toán COD, Lịch sử đặt hàng |
+| **Admin (Quản trị)** | `admin` | `123` | Quản trị toàn hệ thống, CRUD Danh mục & Sản phẩm |
+| **Seller (Người bán)** | `seller1` | `123` | Quản lý sản phẩm gian hàng Nhà Sách Trí Tuệ |
+
+---
+
 ## 📌 Tổng Quan Các Chức Năng Hoàn Thành Cho Vai Trò User
 
 ### 1. Chức năng Giỏ hàng (Cart)
