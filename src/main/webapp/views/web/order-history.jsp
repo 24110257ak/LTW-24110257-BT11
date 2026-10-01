@@ -79,39 +79,15 @@
         <c:remove var="orderError" scope="session"/>
     </c:if>
 
-    <div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h3 class="fw-bold text-dark mb-1">
+            <h3 class="fw-bold text-dark mb-0">
                 <i class="fa-solid fa-clock-rotate-left text-primary me-2"></i>LỊCH SỬ ĐẶT HÀNG
             </h3>
-            <span class="badge bg-primary px-3 py-1">Lọc theo 8 trạng thái: Đơn hàng mới, Đã xác nhận, Chuẩn bị hàng, Vận chuyển, Giao hàng, Đã giao, Đơn hàng hủy, Đơn hàng hoàn</span>
         </div>
         <a href="<c:url value='/products-by-seller'/>" class="btn btn-outline-primary btn-sm">
-            <i class="fa-solid fa-plus me-1"></i>Đặt thêm đơn mới
+            <i class="fa-solid fa-store me-1"></i>Tiếp tục mua sắm
         </a>
-    </div>
-
-    <!-- HƯỚNG DẪN QUAN SÁT THAY ĐỔI TRẠNG THÁI TRONG CSDL -->
-    <div class="sql-guide-box mb-4 shadow-sm">
-        <div class="d-flex align-items-start">
-            <i class="fa-solid fa-database text-primary fs-4 me-3 mt-1"></i>
-            <div>
-                <strong class="text-dark">Hướng dẫn quan sát thay đổi trạng thái theo yêu cầu đề bài:</strong>
-                <p class="small text-muted mb-1 mt-1">
-                    Vào SQL Server mở <code>SSMS</code> hoặc chạy truy vấn để đổi <code>status</code> cho đơn hàng tương ứng, sau đó tải lại trang này để xem kết quả phân loại:
-                </p>
-                <code class="small text-primary fw-bold">
-                    UPDATE Cart SET status = 1 WHERE cartId = '...'; -- Đơn hàng mới (status=1)<br>
-                    UPDATE Cart SET status = 2 WHERE cartId = '...'; -- Đã xác nhận (status=2)<br>
-                    UPDATE Cart SET status = 3 WHERE cartId = '...'; -- Chuẩn bị hàng (status=3)<br>
-                    UPDATE Cart SET status = 4 WHERE cartId = '...'; -- Vận chuyển (status=4)<br>
-                    UPDATE Cart SET status = 5 WHERE cartId = '...'; -- Giao hàng (status=5)<br>
-                    UPDATE Cart SET status = 6 WHERE cartId = '...'; -- Đã giao (status=6)<br>
-                    UPDATE Cart SET status = 7 WHERE cartId = '...'; -- Đơn hàng hủy (status=7)<br>
-                    UPDATE Cart SET status = 8 WHERE cartId = '...'; -- Đơn hàng hoàn (status=8)
-                </code>
-            </div>
-        </div>
     </div>
 
     <!-- HỆ THỐNG TAB LỌC TRẠNG THÁI ĐƠN HÀNG -->
@@ -198,9 +174,9 @@
                             <span class="badge bg-light text-dark border">
                                 <i class="fa-solid fa-money-bill-wave text-success me-1"></i>COD
                             </span>
-                            <!-- BADGE TRẠNG THÁI HIỂN THỊ ĐÚNG THEO DATABASE -->
+                            <!-- BADGE TRẠNG THÁI -->
                             <span class="badge ${order.statusBadgeClass} px-3 py-2 fs-6">
-                                <i class="fa-solid fa-circle-dot me-1"></i>${order.statusName} (status: ${order.status})
+                                <i class="fa-solid fa-circle-dot me-1"></i>${order.statusName}
                             </span>
                         </div>
                     </div>

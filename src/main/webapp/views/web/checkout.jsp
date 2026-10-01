@@ -43,10 +43,9 @@
     </nav>
 
     <div class="mb-4">
-        <h3 class="fw-bold text-dark mb-1">
+        <h3 class="fw-bold text-dark mb-0">
             <i class="fa-solid fa-credit-card text-primary me-2"></i>THANH TOÁN ĐƠN HÀNG
         </h3>
-        <span class="badge bg-success px-3 py-1">Chức năng thanh toán đơn hàng bằng COD (Cash On Delivery)</span>
     </div>
 
     <form action="<c:url value='/checkout'/>" method="post">

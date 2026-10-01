@@ -59,8 +59,8 @@
                             <th style="width: 160px;">Danh Mục</th>
                             <th style="width: 160px;">Cửa Hàng (Seller)</th>
                             <th style="width: 120px;">Đơn Giá</th>
-                            <th style="width: 90px;">Amount</th>
-                            <th style="width: 90px;">Stock</th>
+                            <th style="width: 100px;">Tổng Nhập</th>
+                            <th style="width: 90px;">Tồn Kho</th>
                             <th class="text-end pe-3" style="width: 160px;">Thao Tác</th>
                         </tr>
                     </thead>

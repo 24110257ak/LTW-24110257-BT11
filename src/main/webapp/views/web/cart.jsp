@@ -80,10 +80,9 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h3 class="fw-bold text-dark mb-1">
+            <h3 class="fw-bold text-dark mb-0">
                 <i class="fa-solid fa-cart-shopping text-primary me-2"></i>GIỎ HÀNG CỦA BẠN
             </h3>
-            <span class="badge bg-primary px-3 py-1">Chức năng giỏ hàng cho User: Thêm, Xóa, Sửa, Giới hạn tồn kho</span>
         </div>
         <c:if test="${not empty sessionScope.cart and sessionScope.cart.size() > 0}">
             <a href="<c:url value='/cart/clear'/>" class="btn btn-outline-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa tất cả sản phẩm trong giỏ hàng?');">

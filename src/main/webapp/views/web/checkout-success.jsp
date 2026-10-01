@@ -73,18 +73,8 @@
         </div>
 
         <div class="alert alert-info text-start small mb-4">
-            <i class="fa-solid fa-lightbulb text-warning me-2 fs-5 align-middle"></i>
-            <strong>Gợi ý kiểm thử bài thi:</strong> Đơn hàng hiện đang ở trạng thái <code>status = 1</code> (Đơn hàng mới).
-            Bạn có thể vào SQL Server chạy câu lệnh sau để quan sát sự thay đổi trạng thái trong trang Lịch sử:
-            <div class="bg-dark text-white p-2 rounded mt-2 font-monospace">
-                UPDATE Cart SET status = 2 WHERE cartId = '${order.cartId}'; -- Đã xác nhận<br>
-                UPDATE Cart SET status = 3 WHERE cartId = '${order.cartId}'; -- Chuẩn bị hàng<br>
-                UPDATE Cart SET status = 4 WHERE cartId = '${order.cartId}'; -- Vận chuyển<br>
-                UPDATE Cart SET status = 5 WHERE cartId = '${order.cartId}'; -- Giao hàng<br>
-                UPDATE Cart SET status = 6 WHERE cartId = '${order.cartId}'; -- Đã giao<br>
-                UPDATE Cart SET status = 7 WHERE cartId = '${order.cartId}'; -- Đơn hàng hủy<br>
-                UPDATE Cart SET status = 8 WHERE cartId = '${order.cartId}'; -- Đơn hàng hoàn
-            </div>
+            <i class="fa-solid fa-truck-fast text-primary me-2 fs-5 align-middle"></i>
+            Đơn hàng của bạn đang được hệ thống tiếp nhận và xử lý. Shipper sẽ liên hệ theo số điện thoại nhận hàng khi bắt đầu giao. Quý khách vui lòng chuẩn bị số tiền tương ứng khi nhận hàng!
         </div>
 
         <div class="d-flex justify-content-center gap-3">

@@ -110,11 +110,21 @@
                                 </span>
                             </div>
 
-                            <!-- Amount: -->
+                            <!-- Tồn kho (Stock): -->
                             <div class="list-group-item px-0 py-2">
-                                <span class="detail-label">Amount:</span>
-                                <span class="detail-value badge bg-info text-dark fs-6">${product.amount}</span>
-                                <span class="text-muted ms-2">(Tồn kho: ${product.stock})</span>
+                                <span class="detail-label">Tình trạng:</span>
+                                <c:choose>
+                                    <c:when test="${product.stock != null && product.stock > 0}">
+                                        <span class="detail-value badge bg-success-subtle text-success border border-success fs-6">
+                                            <i class="fa-solid fa-box-open me-1"></i>Còn hàng (${product.stock})
+                                        </span>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <span class="detail-value badge bg-danger-subtle text-danger border border-danger fs-6">
+                                            <i class="fa-solid fa-circle-xmark me-1"></i>Tạm hết hàng
+                                        </span>
+                                    </c:otherwise>
+                                </c:choose>
                             </div>
 
                             <!-- Gian hàng (Seller): -->

@@ -87,7 +87,12 @@
                                     <span class="text-danger fw-bold fs-5">
                                         <fmt:formatNumber value="${prod.price}" type="currency" currencySymbol="" maxFractionDigits="0"/> đ
                                     </span>
-                                    <span class="badge bg-info text-dark">SL: ${prod.amount}</span>
+                                    <span class="badge ${prod.stock > 0 ? 'bg-light text-secondary border' : 'bg-danger'}">
+                                         <c:choose>
+                                             <c:when test="${prod.stock > 0}">Kho: ${prod.stock}</c:when>
+                                             <c:otherwise>Hết hàng</c:otherwise>
+                                         </c:choose>
+                                     </span>
                                 </div>
                                 <div class="d-flex gap-2">
                                     <a href="<c:url value='/product/detail?id=${prod.productId}'/>" class="btn btn-outline-primary btn-sm flex-fill">

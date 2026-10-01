@@ -36,9 +36,6 @@ public class CartService_24110257 implements ICartService_24110257 {
                         if (product.getStock() != null) {
                             product.setStock(Math.max(0, product.getStock() - qty));
                         }
-                        if (product.getAmount() != null) {
-                            product.setAmount(Math.max(0, product.getAmount() - qty));
-                        }
                         productDao.update(product);
                     }
                 }
@@ -89,9 +86,6 @@ public class CartService_24110257 implements ICartService_24110257 {
                                 int qty = (item.getQuantity() != null) ? item.getQuantity() : 0;
                                 if (prod.getStock() != null) {
                                     prod.setStock(prod.getStock() + qty);
-                                }
-                                if (prod.getAmount() != null) {
-                                    prod.setAmount(prod.getAmount() + qty);
                                 }
                                 productDao.update(prod);
                             }

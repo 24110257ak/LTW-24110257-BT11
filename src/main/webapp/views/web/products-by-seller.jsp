@@ -125,10 +125,15 @@
                                             </span>
                                         </div>
 
-                                        <!-- Amount: -->
+                                        <!-- Tồn kho (Stock): -->
                                         <div class="mb-3">
-                                            <span class="product-field-label">Amount: </span>
-                                            <span class="product-field-value badge bg-info text-dark">${p.amount}</span>
+                                            <span class="product-field-label">Kho: </span>
+                                            <span class="product-field-value badge ${p.stock > 0 ? 'bg-light text-secondary border' : 'bg-danger'}">
+                                                <c:choose>
+                                                    <c:when test="${p.stock > 0}">Còn ${p.stock}</c:when>
+                                                    <c:otherwise>Hết hàng</c:otherwise>
+                                                </c:choose>
+                                            </span>
                                         </div>
 
                                         <!-- Nút bấm xem chi tiết & thêm vào giỏ -->
