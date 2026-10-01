@@ -90,7 +90,7 @@
 
     <!-- QUICK ACTIONS -->
     <div class="card border-0 shadow-sm p-4">
-        <h5 class="fw-bold mb-3 text-secondary"><i class="fa-solid fa-bolt me-2 text-warning"></i>Truy Cập Nhanh Quản Trị CRUD (Câu 5 - 3.0 Điểm)</h5>
+        <h5 class="fw-bold mb-3 text-secondary"><i class="fa-solid fa-bolt me-2 text-warning"></i>Truy Cập Nhanh Quản Trị Hệ Thống</h5>
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="p-3 border rounded bg-light d-flex justify-content-between align-items-center">

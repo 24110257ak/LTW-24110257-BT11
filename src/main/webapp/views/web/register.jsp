@@ -12,7 +12,7 @@
             <div class="card shadow border-0 rounded-3">
                 <div class="card-header bg-success text-white text-center py-3 rounded-top-3">
                     <h4 class="fw-bold mb-0"><i class="fa-solid fa-user-plus me-2"></i>ĐĂNG KÝ TÀI KHOẢN</h4>
-                    <p class="small text-white-50 mb-0">Kích hoạt mã OTP qua Email - Câu 2 (1.5 điểm)</p>
+                    <p class="small text-white-50 mb-0">Kích hoạt mã OTP xác thực qua Email</p>
                 </div>
                 <div class="card-body p-4">
 

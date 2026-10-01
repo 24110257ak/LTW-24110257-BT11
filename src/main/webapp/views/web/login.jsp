@@ -59,9 +59,9 @@
                         <a href="<c:url value='/register'/>" class="fw-bold text-decoration-none ms-1">Đăng ký kích hoạt OTP</a>
                     </div>
 
-                    <!-- GỢI Ý TÀI KHOẢN MẪU ĐỂ CHẤM ĐIỂM NHANH -->
+                    <!-- GỢI Ý TÀI KHOẢN MẪU -->
                     <div class="mt-4 pt-3 border-top">
-                        <h6 class="fw-bold text-secondary mb-2"><i class="fa-solid fa-circle-info me-1"></i>Tài khoản mẫu để test phân quyền (Câu 2):</h6>
+                        <h6 class="fw-bold text-secondary mb-2"><i class="fa-solid fa-circle-info me-1"></i>Tài khoản mẫu để kiểm thử:</h6>
                         <ul class="list-unstyled small text-muted mb-0">
                             <li><span class="badge bg-danger me-1">Admin:</span> User: <code>admin</code> | Pass: <code>123</code> (Vào thẳng Quản trị)</li>
                             <li><span class="badge bg-warning text-dark me-1">Seller:</span> User: <code>seller1</code> | Pass: <code>123</code> (Vào Kênh người bán)</li>

@@ -12,7 +12,7 @@
             <h3 class="fw-bold text-dark mb-1">
                 <i class="fa-solid fa-folder-tree text-primary me-2"></i>QUẢN LÝ DANH MỤC (CATEGORY)
             </h3>
-            <span class="badge bg-primary px-3 py-1">Câu 5 (3.0 điểm) - CRUD & Phân trang Category</span>
+            <span class="badge bg-primary px-3 py-1">Quản lý danh mục & Phân trang</span>
         </div>
         <a href="<c:url value='/admin/category/add'/>" class="btn btn-primary shadow-sm">
             <i class="fa-solid fa-plus me-1"></i>Thêm Danh Mục Mới

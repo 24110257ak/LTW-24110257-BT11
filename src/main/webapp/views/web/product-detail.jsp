@@ -42,7 +42,7 @@
     <nav aria-label="breadcrumb" class="mb-3">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<c:url value='/home'/>">Trang Chủ</a></li>
-            <li class="breadcrumb-item"><a href="<c:url value='/products-by-seller'/>">Sản Phẩm Theo Seller (Câu 3)</a></li>
+            <li class="breadcrumb-item"><a href="<c:url value='/products-by-seller'/>">Sản Phẩm Theo Gian Hàng</a></li>
             <li class="breadcrumb-item active" aria-current="page">${product.productName}</li>
         </ol>
     </nav>
@@ -60,9 +60,9 @@
 
             <div class="product-detail-card p-4">
                 <div class="border-bottom pb-3 mb-4 d-flex justify-content-between align-items-center">
-                    <span class="badge bg-success px-3 py-2 fs-6">Câu 4 (2.0 điểm) - Trang Chi Tiết Sản Phẩm</span>
+                    <span class="badge bg-success px-3 py-2 fs-6"><i class="fa-solid fa-circle-info me-1"></i>Thông Tin Chi Tiết Sản Phẩm</span>
                     <a href="<c:url value='/products-by-seller'/>" class="btn btn-outline-secondary btn-sm">
-                        <i class="fa-solid fa-arrow-left me-1"></i>Quay lại danh sách (Câu 3)
+                        <i class="fa-solid fa-arrow-left me-1"></i>Quay lại danh sách
                     </a>
                 </div>
 

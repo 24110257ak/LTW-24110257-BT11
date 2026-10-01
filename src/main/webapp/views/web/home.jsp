@@ -18,12 +18,12 @@
             </p>
             <div class="d-flex flex-wrap gap-2 pt-2">
                 <a class="btn btn-primary btn-lg px-4" href="<c:url value='/products-by-seller'/>">
-                    <i class="fa-solid fa-store me-2"></i>Xem Sản Phẩm Gom Theo Seller (Câu 3)
+                    <i class="fa-solid fa-store me-2"></i>Khám Phá Gian Hàng
                 </a>
                 <c:choose>
                     <c:when test="${sessionScope.account == null}">
                         <a class="btn btn-outline-secondary btn-lg px-4" href="<c:url value='/login'/>">
-                            <i class="fa-solid fa-right-to-bracket me-2"></i>Đăng Nhập / Đăng Ký OTP (Câu 2)
+                            <i class="fa-solid fa-right-to-bracket me-2"></i>Đăng Nhập / Đăng Ký
                         </a>
                     </c:when>
                     <c:otherwise>
@@ -37,7 +37,7 @@
                 </c:choose>
                 <c:if test="${sessionScope.account != null && sessionScope.account.roleId == 2}">
                     <a class="btn btn-outline-danger btn-lg px-4" href="<c:url value='/admin/categories'/>">
-                        <i class="fa-solid fa-gear me-2"></i>Quản Trị CRUD Category & Product (Câu 5)
+                        <i class="fa-solid fa-gear me-2"></i>Trang Quản Trị Hệ Thống
                     </a>
                 </c:if>
             </div>

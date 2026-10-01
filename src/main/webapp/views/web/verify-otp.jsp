@@ -12,7 +12,7 @@
             <div class="card shadow border-0 rounded-3 text-center">
                 <div class="card-header bg-warning text-dark py-3 rounded-top-3">
                     <h4 class="fw-bold mb-0"><i class="fa-solid fa-key me-2"></i>KÍCH HOẠT MÃ OTP</h4>
-                    <p class="small mb-0">Xác thực tài khoản qua Email (Câu 2)</p>
+                    <p class="small mb-0">Xác thực tài khoản qua Email</p>
                 </div>
                 <div class="card-body p-4">
 

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sản Phẩm Gom Theo Từng Seller - Câu 3</title>
+    <title>Sản Phẩm Theo Từng Gian Hàng</title>
     <style>
         .seller-block {
             background: #ffffff;
@@ -57,9 +57,9 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h3 class="fw-bold text-dark mb-1">
-                <i class="fa-solid fa-boxes-stacked text-primary me-2"></i>DANH SÁCH SẢN PHẨM GOM THEO TỪNG SELLER
+                <i class="fa-solid fa-boxes-stacked text-primary me-2"></i>DANH SÁCH SẢN PHẨM THEO GIAN HÀNG
             </h3>
-            <span class="badge bg-primary px-3 py-1">Câu 3 (2.0 điểm) - Gom nhóm theo Mã cửa hàng SellerID</span>
+            <span class="badge bg-primary px-3 py-1">Gom nhóm theo từng gian hàng (Seller)</span>
         </div>
     </div>
 

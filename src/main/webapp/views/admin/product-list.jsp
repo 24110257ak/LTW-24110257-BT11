@@ -13,7 +13,7 @@
             <h3 class="fw-bold text-dark mb-1">
                 <i class="fa-solid fa-boxes-stacked text-success me-2"></i>QUẢN LÝ SẢN PHẨM (PRODUCT)
             </h3>
-            <span class="badge bg-success px-3 py-1">Câu 5 (3.0 điểm) - CRUD & Phân trang Product</span>
+            <span class="badge bg-success px-3 py-1">Quản lý sản phẩm & Phân trang</span>
         </div>
         <a href="<c:url value='/admin/product/add'/>" class="btn btn-success shadow-sm">
             <i class="fa-solid fa-plus me-1"></i>Thêm Sản Phẩm Mới
